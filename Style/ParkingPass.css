@@ -1,0 +1,314 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.DisplyCard {
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999999;
+    background-color: #585858ad;
+    opacity: 1.9;
+}
+
+/*.DisplyCardPostion {
+    border-width: 0px;
+    position: fixed;
+    width: 50%;
+    height: 35%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 10px 70px 4px;
+    background-color: #ffffff;
+    left: 25%;
+    top: 25%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}*/
+.DisplyCardPostion {
+    border-width: 0px;
+    position: fixed;
+    width: auto;
+    height: auto;
+    box-shadow: rgb(0 0 0 / 56%) 0px 10px 70px 4px;
+    background-color: #ffffff;
+    left: 25%;
+    top: 25%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    right: 25%;
+    bottom: 25%;
+}
+.cardoffer {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    transition: 0.3s;
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+.wrap {
+    white-space: nowrap;
+}
+.lbloffhead {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: red;
+}
+.lbloff {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #007bff;
+    text-align-last: center;
+}
+
+.lbloffsub {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #5a5151;
+    text-align-last: center;
+}
+.cardpass {
+    background-color: #fff;
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 60%;
+    border-radius: 5px;
+    width: 95%;
+    box-shadow: 0 15px 20px rgb(0 0 0 / 36%);
+}
+
+    .cardpass img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 0 0 5px;
+    }
+
+.lnkremove {
+    color: red;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+.offerclose {
+    float: right;
+    font-size: 20px;
+    margin-right: 10px;
+    color: red;
+    position: sticky;
+    top: 0;
+}
+
+
+.btn {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    border: none;
+    outline: none;
+    display: flex;
+    width: auto;
+    align-items: center;
+    background-color: #1ca4ff;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5rem !important;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.294);
+}
+
+.cardpass__text {
+    padding: 5px;
+    margin-left: 30px;
+}
+
+    .cardpass__text h1 {
+        color: #351897;
+        font-weight: 400;
+    }
+
+    .cardpass__text h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #818189;
+    }
+
+    .cardpass__text p {
+        color: #351897;
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+.flag-discount {
+    border-radius: 6px 0 0 6px;
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 5px 5px;
+    background: #ffc107;
+    width: 50%;
+    font-size: 15px;
+    font-weight: 900;
+    position: relative;
+}
+
+    .flag-discount::before,
+    .flag-discount::after {
+        content: "";
+        position: absolute;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        display: block;
+    }
+
+    .flag-discount::before {
+        top: 0;
+        border-width: 22px 15px 0 0;
+        border-color: #ffc107 transparent transparent transparent;
+    }
+
+    .flag-discount::after {
+        bottom: 0;
+        border-width: 0 15px 22px 0;
+        border-color: transparent transparent #ffc107 transparent;
+    }
+
+
+/*User Pass*/
+
+.u-clearfix:before,
+.u-clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.u-clearfix:after {
+    clear: both;
+}
+
+
+.subtle {
+    color: white;
+}
+
+.pass-container {
+    margin: 25px auto 0;
+    position: relative;
+    width: 515px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.passimg {
+    width: 60px;
+}
+
+.passVIP {
+    padding: 28px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+    background-image: url('../images/VIP.png');
+    border-radius: 10px;
+    height: 250px;
+    color: white;
+}
+
+.passNormal {
+    padding: 28px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+    background-image: url('../images/normal.png');
+    border-radius: 10px;
+    height: 250px;
+    color: white;
+}
+
+.pass-body {
+    display: inline-block;
+    float: left;
+    width: 300px;
+}
+
+.pass-number {
+    margin-top: 15px;
+}
+
+.pass-user {
+    display: block;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin: 15px 0 0;
+    text-transform: uppercase;
+}
+
+.pass-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1px;
+    margin: 2px 0;
+}
+
+.pass-title-sub {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1px;
+    margin: 20px 0;
+}
+
+
+.pass-description {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 5px;
+    margin: 10px 0;
+}
+
+.pass-description-sub {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 5px;
+    margin: 10px 0;
+}
+
+.pass-read {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 5px 0 3px;
+    position: relative;
+    text-align: center;
+}
+
+
+
+.pass-media {
+    float: right;
+    width: 150px;
+    height: 150px;
+}
+
+.pass-shadow {
+    background-color: #fff;
+    box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1), 0 0 100px 3px rgba(0, 0, 0, 0.25);
+    height: 1px;
+    margin: -1px auto 0;
+    width: 80%;
+    z-index: -1;
+}
+
+

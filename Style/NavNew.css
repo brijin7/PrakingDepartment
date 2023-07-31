@@ -1,0 +1,377 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header1 .nav {
+}
+
+.header1 .nav-list {
+    /*list-style: none;*/
+}
+
+    .header1 .nav-list .nav-item {
+    }
+
+        .header1 .nav-list .nav-item:hover .nav-link,
+        .header1 .nav-list .nav-item.active .nav-link {
+            /*background-color: #bddee9;*/
+        }
+
+    .header1 .nav-list .nav-link {
+        display: flex;
+        align-items: center;
+    }
+
+        .header1 .nav-list .nav-link > * {
+            color: #fff;
+        }
+
+        .header1 .nav-list .nav-link .icon {
+            width: 16px;
+            text-align: center;
+            line-height: 35px;
+            height: 35px;
+            margin-right: 10px;
+            margin-left: 25px;
+            font-size: 22px;
+        }
+
+        .header1 .nav-list .nav-link .icon2 {
+            width: 9px;
+            text-align: center;
+            line-height: 20px;
+            height: 20px;
+            margin-right: 15px;
+            margin-left: 15px;
+            font-size: 22px;
+        }
+
+        .header1 .nav-list .nav-link .icon3 {
+            width: 7px;
+            text-align: center;
+            line-height: 10px;
+            height: 35px;
+            margin-right: 3px;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .header1 .nav-list .nav-link .text {
+            /* display: inline-block;*/
+            font-family: 'Manrope', sans-serif;
+            overflow: hidden;
+            transition: width 0.2s linear;
+            width: 205px;
+            white-space: nowrap;
+            font-size: 15px;
+        }
+
+.text2 {
+    /*display: inline-block;*/
+    font-family: 'Manrope', sans-serif;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    width: 230px;
+    white-space: nowrap;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+/*.header1.optimize {
+    background-color: #1ca4ff;
+    top: 10rem;
+    max-height: 87vh;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0rem 3rem 2rem;
+    right: 21px;
+    overflow: hidden;
+    width: 110px;
+    transition: width 0.3s linear;
+}*/
+.header1.optimize {
+    background-color: #1ca4ff;
+    top: 6rem;
+    max-height: 93vh;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0rem 2rem 2rem;
+    right: 21px;
+    overflow: hidden;
+    width: 110px;
+    transition: width 0.3s linear;
+}
+
+    .header1.optimize .nav-list .nav-link .text2 {
+        width: 16px;
+        padding-left: 20px;
+        transition: all 0s linear;
+    }
+
+    .header1.optimize .nav-list .nav-link .text {
+        width: 16px;
+        padding-left: 20px;
+        transition: all 0s linear;
+    }
+
+.btn-navig {
+    /*color: rgb(0, 0, 0);*/
+    color: rgb(124 124 124);
+    position: absolute;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    /*left: 1.6rem;*/
+    padding-left: 20px;
+    top: 1rem;
+    z-index: 1;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header1 .btn-navig .open,
+.header1.optimize .btn-navig .close {
+    display: none;
+}
+
+.header1.optimize .btn-navig .open {
+    display: inline-block;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 1.875em;
+}
+
+.header1.optimize a[aria-expanded="true"] {
+    background: #1ca4ff;
+}
+
+.header1.optimize ul ul a {
+    background: #1ca4ff;
+}
+
+.header1.optimize a[data-toggle="collapse"] {
+    position: inherit;
+    color: #18a2ff;
+    pointer-events: none;
+}
+
+.header1.optimize .nav-list .nav-link .icon3 {
+    margin-left: 14px;
+}
+
+.header1 .nav-list .nav-link .tooltip {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.header1 .optimize .nav-list .nav-link .icon:hover .header1 .nav-list .nav-link .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    color: red;
+    margin-left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header1.optimize .nav-list .nav-link .icon2 {
+    visibility: hidden;
+    display: none;
+}
+
+.header1.optimize .nav-list .nav-link .icon3 {
+    visibility: hidden;
+    display: none;
+}
+.DisplayHide {
+    display: none;
+}
+/*************************************** New Changes for nav all device view ************************************************/
+/*Normal design for Content*/
+.content {
+    width: -webkit-fill-available;   
+    transition: all 0.8s;
+}
+/*Normal design for contentoptimize*/
+.contentoptimize {
+    width: -webkit-fill-available;  
+    transition: all 0.1s;
+}
+/*Normal design for header1nav*/
+.header1 .nav-list .nav-link {
+    /* display: inline-block; */
+    text-decoration: none;
+    padding: 5px 41px 5px 5px;
+    /*border-radius: 10px 0 0 10px;*/
+    width: 100%;
+    transition: all 0.2s linear;
+}
+/*Normal design for header1*/
+
+/*.header1 {
+    background-color: #1ca4ff;   
+    top: 10rem;  
+    max-height: 87vh;
+    position: relative;
+    display: inline-flex;
+     flex-direction: column; 
+    justify-content: space-between;
+    padding: 2rem 1rem 5rem 2rem;
+    right: 21px;    
+    width: 322px;
+    transition: width 0.3s linear;
+}*/
+/*15 Nov 2022*/
+.header1 {
+    background-color: #1ca4ff;
+    top: 6rem;  
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 2rem 2rem;
+    right: 21px;
+    width: 322px;
+    transition: width 0.3s linear;
+}
+/*Media query for the width 890-1200*/
+@media (min-width: 890px) and (max-width: 1200px) {
+    .header1 .nav-list .nav-link {
+        text-decoration: none;
+        padding: 5px 8px 5px 5px;
+        width: 100%;
+        transition: all 0.2s linear;
+    }
+    .header1 {
+        width: 294px;
+    }
+    .content {
+        width: -webkit-fill-available;
+    }
+    .contentoptimize {
+        width: -webkit-fill-available;
+    }
+}
+/*Media query for the width 750-890*/
+@media (min-width: 750px) and (max-width: 890px) {
+    .header1 .nav-list .nav-link {
+        text-decoration: none;
+        padding: 6px 8px 0px 5px;
+        width: 82%;
+        transition: all 0.2s linear;
+    }
+    .header1 {
+        width: 240px;
+    }
+        .header1 .nav-list .nav-link .text {
+            font-size: 12px
+        }
+    .text2 {
+        font-size: 12px;
+    }
+    .content {
+      width: -webkit-fill-available;
+    }
+    .contentoptimize {
+        width: -webkit-fill-available;
+    }
+}
+/*Media query for the width 550-749*/
+@media (min-width: 550px) and (max-width: 749px) {
+    .header1 .nav-list .nav-link {
+        text-decoration: none;
+        padding: 10px 0px 0px 5px;
+        width: 69%;
+        transition: all 0.2s linear;
+    }
+    .header1 {
+        width: 200px;
+    }
+        .header1 .nav-list .nav-link .text {
+            font-size: 10px
+        }
+    .text2 {
+        font-size: 10px;
+    }
+    .btn-navig {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .content {
+        width: -webkit-fill-available;
+    }
+    .contentoptimize {
+        width: -webkit-fill-available;
+    }
+}
+/*Media query for the width 0-549*/
+@media (min-width: 0px) and (max-width: 549px) {
+    .header1 .nav-list .nav-link {
+        text-decoration: none;
+        padding: 10px 0px 0px 5px;
+        width: 62%;
+        transition: all 0.2s linear;
+    }
+        .header1 .nav-list .nav-link .text {
+            font-size: 10px
+        }
+    .text2 {
+        /*display: inline-block;*/
+        font-family: 'Manrope', sans-serif;
+        overflow: hidden;
+        transition: width 0.2s linear;
+        width: 174px;
+        white-space: nowrap;
+        font-size: 10px;
+        padding-left: 0px;
+    }
+    .btn-navig {
+        font-size: 17px;
+        line-height: 30px;
+        padding-left: 0px;
+    }
+    .header1 .nav-list .nav-link .icon {
+        width: 16px;
+        text-align: center;
+        line-height: 35px;
+        height: 35px;
+        margin-right: 10px;
+        margin-left: 2px;
+        font-size: 22px;
+    }
+    .header1.optimize {
+        width: 70px;
+    }
+    .header1 {
+        width: 169px;
+    }
+    .content {
+       width: -webkit-fill-available;
+    }
+    .contentoptimize {
+         width: -webkit-fill-available;
+    }
+}
+
+/*************************************** New Changes for nav all device view ************************************************/

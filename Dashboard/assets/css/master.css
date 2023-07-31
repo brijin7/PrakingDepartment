@@ -1,0 +1,231 @@
+
+
+/*------------------------------------------------------------------
+# [Color codes]
+
+# teal: #00b5ad
+# olive: #b5cc18
+# violet: #6435c9
+# orange: #f2711c
+# darkgray: darkgray
+# blue: #2185d0
+# grey: #767676
+# */
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body:           1em / "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+Headers:        2em / "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+parapgraph:     1em / "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+Notes:  decreasing heading by 0.4em with every subsequent heading level
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contentts]
+
+
+4. cardcontent / #cardcontent
+5. Sidebar / #sidebar
+6. Boxes / .box
+7. Dashboard cards / .card
+8. Miscellaneous
+9. Adjustments to dafault behaviors
+10. Colors / .teal, .olive, .violet, .orange, .darkgray, .blue, .grey
+11. Responsive properties
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[7. Dashboard Cards / .card] 
+*/
+
+.contentPage {
+    margin: 0;
+    height: 75%;
+}
+
+.card {
+    margin-bottom: 15px;
+    box-shadow: 0 7px 29px 0 rgb(100 100 111 / 20%);
+}
+
+    .card .cardcontent {
+        padding: 15px 15px 10px 15px;
+    }
+
+    .card .cardcontent .icon-big {
+        font-size: 2.5em;
+        min-height: 64px;
+        line-height: 64px;
+    }
+
+    .card .cardcontent .number {
+        font-size: 14px;
+        text-align: right;
+        font-weight: bolder;
+    }
+.linknumber {
+    font-size: 14px;
+    text-align: right;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+    .card .cardcontent .footer {
+        background-attachment: fixed;
+        position: relative;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    .card .cardcontent .stats {
+        display: inline-block;
+        color: #a9a9a9;
+    }
+
+/*------------------------------------------------------------------
+[8. Miscellaneous ] 
+*/
+.line {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+
+.btn-rounded {
+    border-radius: 10em;
+    padding: 6px 8px;
+    font-size: small;
+    text-transform: none;
+    text-shadow: none !important;
+    background: #eaeaea;
+    border-color: transparent;
+    border: none;
+}
+
+    .btn-rounded:hover {
+        border-color: transparent;
+        border: none;
+    }
+
+#myTab {
+    margin-bottom: 15px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.dfd {
+    width: 100%;
+}
+
+.bg-lighter-grey {
+    background: #FAFAFA;
+}
+
+/*------------------------------------------------------------------
+[9. Adjustments to default behaviors] 
+*/
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn.btn-square {
+    border-radius: 0;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:after {
+    font-size: .8rem;
+    bottom: .9rem;
+}
+
+.dataTables_info {
+    visibility: hidden;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details {
+    display: block;
+}
+
+
+
+.tab-content {
+    padding: 15px;
+}
+
+.svg-inline--fa {
+    min-width: 15px;
+}
+
+.display-absolute {
+    position: absolute;
+}
+
+.large-icon {
+    font-size: 3em;
+}
+
+.license span {
+    margin-bottom: 1em;
+}
+
+/*------------------------------------------------------------------
+[10. Colors / .teal, .olive, .violet, .orange, .darkgray, .blue, .grey] 
+*/
+.teal {
+    color: #00b5ad !important;
+}
+
+.olive {
+    color: #b5cc18 !important;
+}
+
+.violet {
+    color: #6435c9 !important;
+}
+
+.orange {
+    color: #f2711c !important;
+}
+
+.darkgray {
+    color: darkgray !important;
+}
+
+.blue {
+    color: #2185d0 !important;
+}
+
+.grey {
+    color: #767676 !important;
+}
+
+/*------------------------------------------------------------------
+[11. Responsive properties] 
+*/

@@ -1,0 +1,85 @@
+﻿body {
+    font-family: Roboto-Regular, sans-serif !important;
+}
+
+.Booking__ticket {
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 1rem 1.5rem rgb(0 0 0 / 20%);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    /*border: 2px solid;*/
+    max-width: 15rem;
+}
+
+    /*.Booking__ticket .parkingName__container {
+    margin-bottom: 0.5rem;
+}*/
+
+    .Booking__ticket .parkingName__container .lblBooking__ParkingName {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+    }
+
+    .Booking__ticket .BranchNameAndPhNo__container {
+        display: flex;
+        justify-content: space-between;
+        /*margin-top:10px;*/
+    }
+
+        .Booking__ticket .BranchNameAndPhNo__container .lblBranchNameAndPhNo {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+    .Booking__ticket .Booking__qr .imageQr {
+        display: block;
+        width: 8rem;
+        margin: 0 auto;
+    }
+
+    .Booking__ticket .BookingAndVehicle__container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+        .Booking__ticket .BookingAndVehicle__container .cmnBookingAndVehicle {
+            text-align: right;
+        }
+
+            .Booking__ticket .BookingAndVehicle__container .cmnBookingAndVehicle .BookingAndVehicle__header {
+                text-align: left;
+                font-size: 0.8rem;
+            }
+
+            .Booking__ticket .BookingAndVehicle__container .cmnBookingAndVehicle .lblBookingAndVehicle {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+    .Booking__ticket .Booking__details .Booking__details__Sub {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .Booking__ticket .Booking__details .Booking__details__Sub .Booking__details__Sub__heading {
+            font-family: Roboto-Regular, sans-serif !important;
+            font-size: 13px;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .Booking__ticket .Booking__details .Booking__details__Sub .Booking__details__Sub__sub {
+            font-family: Roboto-Regular, sans-serif !important;
+            font-size: 13px;
+            color: #000;
+        }
+
+.insStyle {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: -10px;
+}
